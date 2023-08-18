@@ -2,6 +2,7 @@ package net.frogybot.shopexperience.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.frogybot.shopexperience.ShopExperience;
+import net.frogybot.shopexperience.block.ModBlocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.ItemStack;
@@ -16,6 +17,8 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.marketcoin"))
                     .icon(() -> new ItemStack(ModItems.MARKETCOIN)).entries((displayContext, entries) -> {
                     entries.add(ModItems.MARKETCOIN);
+
+                    entries.add(ModBlocks.RETAIL_SHELVING);
 
                     }).build());
     public static void registerItemGroups(){
