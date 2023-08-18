@@ -2,6 +2,7 @@ package net.frogybot.shopexperience;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.frogybot.shopexperience.item.ModItemGroups;
 import net.frogybot.shopexperience.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,7 +13,7 @@ public class ShopExperience implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 
 	}
